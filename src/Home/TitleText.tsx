@@ -8,7 +8,7 @@ export const TitleText = () => {
       <h1
         className="pt-[130px] text-[280px] font-cursive font-extrabold text-transparent 
                    bg-clip-text bg-cover bg-center [-webkit-text-stroke:2px_#000] leading-none 
-                   bg-[url('trees-3.jpg')]"
+                   bg-[url('/trees-3.jpg')]"
       >
         UJAMA<span className="ml-3">A</span>
       </h1>
