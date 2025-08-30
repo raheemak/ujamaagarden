@@ -8,7 +8,7 @@ export const TitleText = () => {
              bg-clip-text bg-cover bg-center [-webkit-text-stroke:2px_#000] leading-none 
              bg-[url('/trees-3.jpg')]"
       >
-        UJAMA <span className="sm:ml-3">A</span>
+        UJAMAA
       </h1>
 
       <h2 className="-mt-4 text-5xl sm:text-5xl md:text-6xl text-[#395339] text-center sm:text-left">
