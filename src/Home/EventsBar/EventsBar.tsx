@@ -6,13 +6,7 @@ export const EventsBar = () => {
 
   const colors = ["#cc9a86", "#C4BD8B", "#e9eff9", "#abb6a0", "#d6d6c3"]; // Add more colors as needed
   const events = [
-     {
-      title: "Mom Program",
-      date: "2024-05-15",
-      description:
-        "Join us for a day of planting and community bonding at UJAMAA Garden.",
-    },
-     {
+    {
       title: "Mom Program",
       date: "2024-05-15",
       description:
@@ -24,7 +18,13 @@ export const EventsBar = () => {
       description:
         "Join us for a day of planting and community bonding at UJAMAA Garden.",
     },
-     {
+    {
+      title: "Mom Program",
+      date: "2024-05-15",
+      description:
+        "Join us for a day of planting and community bonding at UJAMAA Garden.",
+    },
+    {
       title: "Summer Youth",
       date: "2024-06-20",
       description:
