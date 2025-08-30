@@ -7,17 +7,19 @@ export const NavBar = () => {
   ];
 
   return (
-    <div className="w-full flex items-center justify-between shadow-md  p-4">
-      <div className="flex items-center pt-1">
-        <span className="text-lg font-semibold ">Home</span>
+    <div className="w-full shadow-md p-4 flex flex-col sm:flex-row sm:items-center sm:justify-between">
+      <div className="flex items-center justify-between">
+        <span className="text-lg font-semibold">Home</span>
+
+        <button className="sm:hidden text-xl font-bold">☰</button>
       </div>
 
-      <div className="flex items-center space-x-8">
+      <div className="flex flex-col sm:flex-row sm:space-x-8 mt-4 sm:mt-0">
         {MenuItems.map((item) => (
           <a
             key={item.name}
             href={`#${item.path}`}
-            className="text-lg font-semibold"
+            className="text-lg font-semibold py-2 sm:py-0"
           >
             {item.name}
           </a>

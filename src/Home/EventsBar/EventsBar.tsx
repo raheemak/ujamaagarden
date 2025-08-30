@@ -38,7 +38,7 @@ export const EventsBar = () => {
     },
   ]; // Replace with actual events from backend
   return (
-    <div className="w-full h-1/4 flex items-center justify-center ">
+    <div className="w-full flex flex-col md:flex-row items-center justify-center mt-10">
       {events.map((event, index) => (
         <div key={index} className="m-4">
           <EventCard event={event} color={colors[index % colors.length]} />
