@@ -14,6 +14,7 @@ export const TitleText = () => {
       <h2 className="-mt-4 text-5xl sm:text-5xl md:text-6xl text-[#395339] text-center sm:text-left">
         community garden.
       </h2>
+
     </div>
   );
 };
