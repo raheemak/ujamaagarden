@@ -1,7 +1,9 @@
 import { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 
 export const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
 
   const MenuItems = [
     { name: "About Us", path: "about" },
@@ -10,9 +12,16 @@ export const NavBar = () => {
     { name: "Growing Season", path: "growing" },
   ];
 
+  const handleMenuClick = (open: boolean, newpath: string) => {
+    navigate(newpath);
+    setIsOpen(open);
+  };
+
   return (
     <div className="w-full shadow-md p-4 flex items-center justify-between relative">
-      <span className="text-lg font-semibold">Home</span>
+      <Link to="/">
+        <span className="text-lg font-semibold">Home</span>
+      </Link>
 
       <button
         className="sm:hidden text-2xl font-bold"
@@ -32,7 +41,7 @@ export const NavBar = () => {
               key={item.name}
               href={`#${item.path}`}
               className="text-lg font-semibold py-2 px-4 sm:py-0 sm:px-0 border-b sm:border-none border-gray-200"
-              onClick={() => setIsOpen(false)}
+              onClick={() => handleMenuClick(false, item.path)}
             >
               {item.name}
             </a>
