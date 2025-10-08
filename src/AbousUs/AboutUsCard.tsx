@@ -1,6 +1,6 @@
 export const AboutUsImg = ({ img }: { img: string }) => {
   return (
-    <div className="flex-1 flex justify-center w-1/2">
+    <div className="flex-1 flex justify-center w-1/2 hidden md:block">
       <div className="relative">
         <img
           className="absolute left-0 bottom-0 -translate-x-5 translate-y-30 object-cover"
@@ -22,7 +22,7 @@ export const AboutUsText = ({
   content: string | string[];
 }) => {
   return (
-    <div className="flex-1 p-2 pr-3">
+    <div className="flex-1 pr-3 w-full md:w-auto ">
       <h2 className="text-xl ">{title}</h2>
       <br />
 
