@@ -3,7 +3,7 @@ export const ABOUT_US_CONSTANTS = {
     title: "Vision",
     content:
       "Young people learn, practice, and develop skills to co-create a more more caring and just society, rooted in reciprocity with the earth and knowledge of ancestral wisdoms. Their work is reverberated throughout their communities and inspires gatherings with serious intentions to make the world a better place for all people.",
-    img: "/tree.png",
+    img: "/about_us_1.png",
   },
   MISSION: {
     title: "Mission",
