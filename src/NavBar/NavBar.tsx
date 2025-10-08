@@ -39,7 +39,6 @@ export const NavBar = () => {
           {MenuItems.map((item) => (
             <a
               key={item.name}
-              href={`#${item.path}`}
               className="text-lg font-semibold py-2 px-4 sm:py-0 sm:px-0 border-b sm:border-none border-gray-200"
               onClick={() => handleMenuClick(false, item.path)}
             >

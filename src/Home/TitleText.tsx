@@ -1,3 +1,10 @@
+const DESCRIPTION_ITEMS = [
+  "youth-centered experimental learning space",
+  "resting ground",
+  "community garden",
+  "located in Northeast Bronx",
+];
+
 export const TitleText = () => {
   return (
     <div className="w-full flex-1 relative flex overflow-visible flex-col items-center justify-center bg-[url('/ujamaa-bg.png')] bg-cover bg-center">
@@ -15,6 +22,22 @@ export const TitleText = () => {
         community garden.
       </h2>
 
+      <br />
+
+      {/* <span className="text-xl sm:text-xl w-1/2 text-center text-black z-10 px-4">
+        youth-centered and experimental learning space, resting ground, and
+        community garden located in the Northeast Bronx
+      </span> */}
+      <span className="text-xl sm:text-xl w-2/3 text-center text-black z-10 px-4">
+        {DESCRIPTION_ITEMS.map((item, index) => (
+          <span key={index}>
+            <span>{item}</span>
+            {index < DESCRIPTION_ITEMS.length - 1 && (
+              <span className="mx-1">|</span>
+            )}
+          </span>
+        ))}
+      </span>
     </div>
   );
 };
