@@ -1,14 +1,19 @@
 export const AboutUsImg = ({ img }: { img: string }) => {
   return (
-    <div className="flex-1 flex justify-center w-1/2 hidden md:block">
-      <div className="relative">
+    <div className="flex-1 flex justify-center w-full md:w-1/2">
+      <div className="relative w-full h-64 md:w-auto md:h-auto">
         <img
-          className="absolute left-0 bottom-0 -translate-x-5 translate-y-30 object-cover"
+          className="absolute inset-0 w-full h-full object-cover z-0 opacity-60"
           src="/watercolor_blob.png"
           alt=""
         />
-
-        <img className="relative object-cover z-10" src={img} alt="" />
+        <div className="relative z-10 flex items-center justify-center w-full h-full">
+          <img
+            className="object-cover w-full h-full md:w-auto md:h-auto"
+            src={img}
+            alt=""
+          />
+        </div>
       </div>
     </div>
   );
@@ -42,7 +47,7 @@ export const AboutUsText = ({
 };
 export const AboutUsCard = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className="w-full relative flex overflow-visible flex-row items-center justify-center bg-cover bg-center px-12 py-12">
+    <div className="w-full relative flex overflow-visible flex-col md:flex-row items-center justify-center bg-cover bg-center px-12 py-12">
       {children}
     </div>
   );

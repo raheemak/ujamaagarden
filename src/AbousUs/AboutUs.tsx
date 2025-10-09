@@ -9,17 +9,12 @@ export const AboutUs = () => {
 
       {Object.values(ABOUT_US_CONSTANTS).map((section, _index) => (
         <AboutUsCard>
-          {_index % 2 === 0 ? (
-            <>
-              <AboutUsImg img={section.img} />
-              <AboutUsText title={section.title} content={section.content} />
-            </>
-          ) : (
-            <>
-              <AboutUsText title={section.title} content={section.content} />
-              <AboutUsImg img={section.img} />
-            </>
-          )}
+          <div
+            className={`flex flex-col md:flex-row ${_index % 2 !== 0 ? "md:flex-row-reverse" : ""} items-center`}
+          >
+            <AboutUsImg img={section.img} />
+            <AboutUsText title={section.title} content={section.content} />
+          </div>
         </AboutUsCard>
       ))}
     </div>

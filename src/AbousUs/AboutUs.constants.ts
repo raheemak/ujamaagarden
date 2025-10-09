@@ -9,7 +9,7 @@ export const ABOUT_US_CONSTANTS = {
     title: "Mission",
     content:
       "At Ujamaa Garden, we consider access to organic, local, and fresh produce as the necessary first step towards liberatory world-making. Our partnerships and programs pair our urban community’s needs with rural resources by bringing food from upstate NY to our community members living under food apartheid. By increasing capacity through food security, we facilitate space for visioning and developing tools to create the world we want to inhabit. Ujamaa Garden is free and open to open to the public to serve as a gathering place to play, create, rest, and seed nourishing futures.",
-    img: "/tree.png",
+    img: "/about_us_2.png",
   },
   CORE_VALUES: {
     title: "Core Values",
@@ -21,6 +21,6 @@ export const ABOUT_US_CONSTANTS = {
       "Acknowledging the importance and wisdom of generations, species, and beings different from us is essential to create strong coalitions.",
       "We build intergenerationally, across cultures and languages, and beyond the human human form!",
     ],
-    img: "/tree.png",
+    img: "/about_us_3.png",
   },
 };
