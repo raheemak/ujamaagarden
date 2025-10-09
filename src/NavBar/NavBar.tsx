@@ -7,9 +7,10 @@ export const NavBar = () => {
 
   const MenuItems = [
     { name: "About Us", path: "about" },
-    { name: "Donate", path: "donate" },
+    { name: "Events & Programming", path: "events" },
     { name: "Images", path: "images" },
     { name: "Growing Season", path: "growing" },
+    { name: "Donate", path: "donate" },
   ];
 
   const handleMenuClick = (open: boolean, newpath: string) => {
@@ -20,7 +21,9 @@ export const NavBar = () => {
   return (
     <div className="w-full shadow-md p-4 flex items-center justify-between relative">
       <Link to="/">
-        <span className="text-lg font-semibold">Home</span>
+        <span className=" hover:text-green-800 active:text-green-800 text-lg font-semibold">
+          Home
+        </span>
       </Link>
 
       <button
@@ -39,7 +42,7 @@ export const NavBar = () => {
           {MenuItems.map((item) => (
             <a
               key={item.name}
-              className="text-lg font-semibold py-2 px-4 sm:py-0 sm:px-0 border-b sm:border-none border-gray-200"
+              className="text-lg font-semibold py-2 px-4 sm:py-0 sm:px-0 border-b sm:border-none border-gray-200 hover:text-green-800 active:text-green-800 cursor-pointer"
               onClick={() => handleMenuClick(false, item.path)}
             >
               {item.name}
