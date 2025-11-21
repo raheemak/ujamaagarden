@@ -10,8 +10,8 @@ export const NavBar = () => {
     { name: "Events", path: "events" },
     { name: "Programs", path: "programs" },
     { name: "Images", path: "images" },
-    { name: "Growing Season", path: "growing" },
-    { name: "Donate", path: "donate" },
+    // { name: "Growing Season", path: "growing" },
+    // { name: "Donate", path: "donate" },
 
   ];
 
