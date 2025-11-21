@@ -2,7 +2,7 @@ import { EventCard } from "./Card/EventCard";
 
 export const EventsBar = () => {
   //todo : get upcoming events from backend and map through them to create event cards
-  // todo if no evenets, show a different css design with a message like "No upcoming events, check back later"
+  // todo if no events, show a different css design with a message like "No upcoming events, check back later"
 
   const colors = ["#cc9a86", "#C4BD8B", "#e9eff9", "#abb6a0", "#d6d6c3"]; // Add more colors as needed
   const events = [

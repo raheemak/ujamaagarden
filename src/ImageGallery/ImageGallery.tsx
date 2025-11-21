@@ -13,7 +13,6 @@ export const ImageGallery = () => {
   const [showLoader, setShowLoader] = useState(true);
 
   useEffect(() => {
-    // Minimum loader display of 1 second
     const timer = setTimeout(() => {
       setShowLoader(false);
     }, 1000);
@@ -29,7 +28,7 @@ export const ImageGallery = () => {
             // hidden: !showLoader
           })}
         >
-          <FlowerLoader loadingText="Loading Images"/>
+          <FlowerLoader loadingText="Loading Images" />
         </div>
       )}
 

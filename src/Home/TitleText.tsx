@@ -24,10 +24,6 @@ export const TitleText = () => {
 
       <br />
 
-      {/* <span className="text-xl sm:text-xl w-1/2 text-center text-black z-10 px-4">
-        youth-centered and experimental learning space, resting ground, and
-        community garden located in the Northeast Bronx
-      </span> */}
       <span className="text-xl sm:text-xl w-2/3 text-center text-black z-10 px-4">
         {DESCRIPTION_ITEMS.map((item, index) => (
           <span key={index}>

@@ -1,5 +1,6 @@
 import { AboutUs } from "./AbousUs/AboutUs";
 import { Donate } from "./Donate/Donate";
+import { EventsAndProgramming } from "./EventsAndProgramming/EventsAndProgramming";
 import { Home } from "./Home/Home";
 import { ImageGallery } from "./ImageGallery/ImageGallery";
 import { NavBar } from "./NavBar/NavBar";
@@ -15,6 +16,7 @@ function App() {
           <Route path="/about" element={<AboutUs />} />
           <Route path="/donate" element={<Donate />} />
           <Route path="/images" element={<ImageGallery />} />
+          <Route path="/events" element={<EventsAndProgramming />} />
         </Routes>
       </div>
     </div>
