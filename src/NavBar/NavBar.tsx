@@ -12,7 +12,6 @@ export const NavBar = () => {
     { name: "Images", path: "images" },
     // { name: "Growing Season", path: "growing" },
     // { name: "Donate", path: "donate" },
-
   ];
 
   const handleMenuClick = (open: boolean, newpath: string) => {
