@@ -7,10 +7,12 @@ export const NavBar = () => {
 
   const MenuItems = [
     { name: "About Us", path: "about" },
-    { name: "Events & Programming", path: "events" },
+    { name: "Events", path: "events" },
+    { name: "Programs", path: "programs" },
     { name: "Images", path: "images" },
     { name: "Growing Season", path: "growing" },
     { name: "Donate", path: "donate" },
+
   ];
 
   const handleMenuClick = (open: boolean, newpath: string) => {
