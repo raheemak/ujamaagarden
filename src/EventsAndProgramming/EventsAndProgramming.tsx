@@ -1,12 +1,25 @@
 import { FlowerLoader } from "../shared/FlowerLoader";
 import { EventProgrammingCard } from "./EventProgrammingCard";
-import { useGetEventsPrograms } from "./useGetEventsPrograms";
+import { usePostsByTag } from "./usePostsByTag";
 
-export const EventsAndProgramming = () => {
-  const { eventsAndPrograms, isLoading, isError } = useGetEventsPrograms();
+export type EventType = "EVENT" | "PROGRAM";
+
+type EventsAndProgrammingProps = {
+  eventType: EventType;
+};
+
+export const EventsAndProgramming = ({
+  eventType,
+}: EventsAndProgrammingProps) => {
+  const {
+    data: eventsAndPrograms,
+    isLoading,
+    isError,
+  } = usePostsByTag(eventType);
+
   if (isLoading) return <FlowerLoader loadingText="Loading events" />;
 
-  if (isError) return <p>Failed to load posts.</p>;
+  if (isError || !eventsAndPrograms) return <p>Failed to load posts.</p>;
 
   return (
     <div className="gap-6 mt-8 px-4 py-2">
@@ -19,7 +32,7 @@ export const EventsAndProgramming = () => {
             title={event.title}
             published={event.published}
             content={event.content}
-            eventType={event.type}
+            eventType={eventType}
           />
         ))}
       </div>

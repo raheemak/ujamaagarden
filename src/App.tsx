@@ -16,8 +16,14 @@ function App() {
           <Route path="/about" element={<AboutUs />} />
           <Route path="/donate" element={<Donate />} />
           <Route path="/images" element={<ImageGallery />} />
-          <Route path="/events" element={<EventsAndProgramming />} />
-          <Route path="/programs" element={<EventsAndProgramming />} />
+          <Route
+            path="/events"
+            element={<EventsAndProgramming eventType="EVENT" />}
+          />
+          <Route
+            path="/programs"
+            element={<EventsAndProgramming eventType="PROGRAM" />}
+          />
         </Routes>
       </div>
     </div>
