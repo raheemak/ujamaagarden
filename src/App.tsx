@@ -1,6 +1,7 @@
 import { AboutUs } from "./AbousUs/AboutUs";
 import { Donate } from "./Donate/Donate";
 import { Home } from "./Home/Home";
+import { ImageGallery } from "./ImageGallery/ImageGallery";
 import { NavBar } from "./NavBar/NavBar";
 import { Routes, Route } from "react-router-dom";
 
@@ -13,6 +14,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/donate" element={<Donate />} />
+          <Route path="/images" element={<ImageGallery />} />
         </Routes>
       </div>
     </div>
