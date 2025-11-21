@@ -10,7 +10,7 @@ export const AboutUs = () => {
       {Object.values(ABOUT_US_CONSTANTS).map((section, _index) => (
         <AboutUsCard>
           <div
-            className={`flex flex-col md:flex-row ${_index % 2 !== 0 ? "md:flex-row-reverse" : ""} items-center`}
+            className={`flex flex-col gap-x-8 md:flex-row ${_index % 2 !== 0 ? "md:flex-row-reverse" : ""} items-center`}
           >
             <AboutUsImg img={section.img} />
             <AboutUsText title={section.title} content={section.content} />
