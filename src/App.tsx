@@ -1,5 +1,5 @@
 import { AboutUs } from "./AbousUs/AboutUs";
-import { Donate } from "./Donate/Donate";
+// import { Donate } from "./Donate/Donate";
 import { EventsAndProgramming } from "./EventsAndProgramming/EventsAndProgramming";
 import { Home } from "./Home/Home";
 import { ImageGallery } from "./ImageGallery/ImageGallery";
