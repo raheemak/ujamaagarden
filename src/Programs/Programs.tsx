@@ -24,7 +24,7 @@ export const Programs = () => {
     <div className="w-full flex flex-col items-center py-10">
       <h2 className="text-4xl font-bold mb-8">Our Programs</h2>
       <div className="w-full flex justify-center">
-        <div className="w-full md:w-3/4 grid grid-cols-1 md:grid-cols-3 gap-8 justify-center items-start py-2">
+        <div className="w-full md:w-3/4 px-4 md:px-0 grid grid-cols-1 md:grid-cols-3 gap-8 justify-center items-start py-">
           {PROGRAMS.map((program, index) => (
             <ProgramCard
               key={index}

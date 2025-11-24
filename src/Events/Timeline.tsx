@@ -56,9 +56,7 @@ export const Timeline = ({
               className="
                   absolute left-1/2 top-[50%]
                   w-4 h-4 -translate-x-1/2 -translate-y-1/2
-                 rounded-full
-                          bg-[url('/timeline_flower.png')] bg-cover bg-center w-10 h-10
-
+                 rounded-full bg-[url('/timeline_flower.png')] bg-cover bg-center w-10 h-10
                 "
             />
           </div>
