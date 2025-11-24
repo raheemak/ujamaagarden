@@ -2,24 +2,16 @@ import { useQuery } from "@tanstack/react-query";
 
 const BLOGGER_API_KEY = import.meta.env.VITE_BLOGGER_KEY;
 
-interface BloggerEntry {
+export type BloggerEntry = {
   id: string;
   title: string;
   content: string;
   published: string;
   url: string;
-}
-
-interface BloggerApiItem {
-  id: string;
-  title: string;
-  content: string;
-  published: string;
-  url: string;
-}
+};
 
 interface BloggerApiResponse {
-  items: BloggerApiItem[];
+  items: BloggerEntry[];
 }
 
 const fetchPostsByTag = async (tag: string): Promise<BloggerEntry[]> => {
