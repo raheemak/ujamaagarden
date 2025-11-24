@@ -47,7 +47,7 @@ export const AboutUsText = ({
 };
 export const AboutUsCard = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className="w-full relative flex overflow-visible flex-col md:flex-row items-center justify-center bg-cover bg-center px-12 py-12">
+    <div className="w-full relative flex overflow-visible flex-col md:flex-row items-center justify-center bg-cover bg-center px-4 py-8 md:px-12 md:py-12">
       {children}
     </div>
   );
