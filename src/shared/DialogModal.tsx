@@ -16,7 +16,9 @@ export const DialogModal = ({
         <Dialog.Content
           className="
             fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2
-            bg-white p-6 rounded-xl shadow-lg 
+            bg-white p-6 rounded-xl shadow-lg
+            w-[calc(100%-2rem)] md:w-auto md:max-w-2xl
+            max-h-[90vh] overflow-y-auto
           "
         >
           {children}
