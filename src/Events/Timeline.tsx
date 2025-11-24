@@ -1,6 +1,14 @@
 import { TimelineCard } from "./TimelineCard";
 
-export const Timeline = ({ items }) => (
+export const Timeline = ({
+  items,
+}: {
+  items: {
+    published: string | number | Date;
+    title: string;
+    content: string;
+  }[];
+}) => (
   <div className="relative w-full max-w-4xl mx-auto py-16">
     <div className="absolute left-1/2 top-0 h-full w-1 -translate-x-1/2 bg-gray-300"></div>
 

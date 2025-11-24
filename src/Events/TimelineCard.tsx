@@ -2,7 +2,12 @@ import { useState } from "react";
 import { DialogModal } from "../shared/DialogModal";
 import { EventDialog } from "./EventDialog";
 
-export const TimelineCard = ({ title, content }) => {
+type TimelineCardProps = {
+  content: string;
+  title: string;
+};
+
+export const TimelineCard = ({ title, content }: TimelineCardProps) => {
   const [open, setOpen] = useState(false);
 
   return (
