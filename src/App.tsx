@@ -5,6 +5,7 @@ import { Home } from "./Home/Home";
 import { ImageGallery } from "./ImageGallery/ImageGallery";
 import { NavBar } from "./NavBar/NavBar";
 import { Routes, Route } from "react-router-dom";
+import { Programs } from "./Programs/Programs";
 
 function App() {
   return (
@@ -20,10 +21,7 @@ function App() {
             path="/events"
             element={<EventsAndProgramming eventType="EVENT" />}
           />
-          <Route
-            path="/programs"
-            element={<EventsAndProgramming eventType="PROGRAM" />}
-          />
+          <Route path="/programs" element={<Programs />} />
         </Routes>
       </div>
     </div>
