@@ -6,9 +6,9 @@ import { NavBar } from "./NavBar/NavBar";
 import { Routes, Route } from "react-router-dom";
 import { Programs } from "./Programs/Programs";
 import { Events } from "./Events/Events";
-import { MomProgram } from "./Programs/ProgramDialogs/MomProgram";
-import { Restoration } from "./Programs/ProgramDialogs/Restoration";
-import { YouthEducation } from "./Programs/ProgramDialogs/YouthEducation";
+import { MomProgram } from "./Programs/Programs/MomProgram";
+import { Restoration } from "./Programs/Programs/Restoration";
+import { YouthEducation } from "./Programs/Programs/YouthEducation";
 
 function App() {
   return (
