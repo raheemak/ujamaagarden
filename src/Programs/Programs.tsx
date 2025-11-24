@@ -1,24 +1,21 @@
 import { ProgramCard } from "./ProgramCard";
-import { MomProgram } from "./ProgramDialogs/MomProgram";
-import { Restoration } from "./ProgramDialogs/Restoration";
-import { YouthEducation } from "./ProgramDialogs/YouthEducation";
 
 const PROGRAMS = [
   {
     title: "Environmental Conservation and Restoration",
     img: "restoration.png",
-    content: <Restoration />,
+    url: "/environmental-conservation",
   },
   {
     title: "Mom Program",
     img: "mom_program.png",
-    content: <MomProgram />,
+    url: "/mom-program",
   },
 
   {
     title: "Youth Education",
     img: "youth_education.png",
-    content: <YouthEducation />,
+    url: "/youth-education",
   },
 ];
 
@@ -33,7 +30,7 @@ export const Programs = () => {
               key={index}
               title={program.title}
               img={program.img}
-              content={program.content}
+              url={program.url}
             />
           ))}
         </div>

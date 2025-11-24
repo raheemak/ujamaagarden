@@ -1,6 +1,6 @@
 export const YouthEducation = () => {
   return (
-    <div>
+    <div className="w-full max-w-4xl mx-auto p-6">
       <h2 className="text-2xl font-bold mb-4">Youth Education Program</h2>
       <div className="mb-2 flex flex-col gap-4">
         <span className="flex-col flex items-center">

@@ -1,6 +1,6 @@
 export const MomProgram = () => {
   return (
-    <div className="p-6">
+    <div className="w-full max-w-4xl mx-auto p-6">
       <h2 className="text-2xl font-bold mb-4">Mom Program</h2>
       <p className="mb-4">
         Launched in Spring 2024, our Mom Program supports a cohort of 11 mothers

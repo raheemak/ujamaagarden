@@ -6,6 +6,9 @@ import { NavBar } from "./NavBar/NavBar";
 import { Routes, Route } from "react-router-dom";
 import { Programs } from "./Programs/Programs";
 import { Events } from "./Events/Events";
+import { MomProgram } from "./Programs/ProgramDialogs/MomProgram";
+import { Restoration } from "./Programs/ProgramDialogs/Restoration";
+import { YouthEducation } from "./Programs/ProgramDialogs/YouthEducation";
 
 function App() {
   return (
@@ -19,6 +22,9 @@ function App() {
           <Route path="/images" element={<ImageGallery />} />
           <Route path="/events" element={<Events />} />
           <Route path="/programs" element={<Programs />} />
+          <Route path="/mom-program" element={<MomProgram />} />
+          <Route path="/environmental-conservation" element={<Restoration />} />
+          <Route path="/youth-education" element={<YouthEducation />} />
         </Routes>
       </div>
     </div>
