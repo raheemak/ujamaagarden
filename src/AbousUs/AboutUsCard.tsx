@@ -19,32 +19,6 @@ export const AboutUsImg = ({ img }: { img: string }) => {
   );
 };
 
-export const AboutUsText = ({
-  title,
-  content,
-}: {
-  title: string;
-  content: string | string[];
-}) => {
-  return (
-    <div className="flex-1 pr-3 w-full md:w-auto ">
-      <h2 className="text-xl ">{title}</h2>
-      <br />
-
-      {Array.isArray(content) ? (
-        <ul>
-          {content.map((item, index) => (
-            <li className="list-disc pl-5" key={index}>
-              {item}
-            </li>
-          ))}
-        </ul>
-      ) : (
-        <p>{content}</p>
-      )}
-    </div>
-  );
-};
 export const AboutUsCard = ({ children }: { children: React.ReactNode }) => {
   return (
     <div className="w-full relative flex overflow-visible flex-col md:flex-row items-center justify-center bg-cover bg-center px-4 py-8 md:px-12 md:py-12">

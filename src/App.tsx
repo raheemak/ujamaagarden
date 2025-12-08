@@ -9,6 +9,7 @@ import { Events } from "./Events/Events";
 import { MomProgram } from "./Programs/Programs/MomProgram";
 import { Restoration } from "./Programs/Programs/Restoration";
 import { YouthEducation } from "./Programs/Programs/YouthEducation";
+import { ContactUs } from "./ContactUs/ContactUs";
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/mom-program" element={<MomProgram />} />
           <Route path="/environmental-conservation" element={<Restoration />} />
           <Route path="/youth-education" element={<YouthEducation />} />
+          <Route path="/contact-us" element={<ContactUs />} />
         </Routes>
       </div>
     </div>

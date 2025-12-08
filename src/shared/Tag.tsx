@@ -18,7 +18,7 @@ export const Tag = ({ text, color = "blue", className }: TagProps) => {
   return (
     <span
       className={classNames(
-        "inline-block px-2 py-0.5 text-sm font-medium rounded-full",
+        "inline-block px-2 py-0.5 text-lg font-medium rounded-full",
         colorClasses[color],
         className,
       )}

@@ -15,8 +15,8 @@ export const EventCard = ({ event, color }: EventCardProps) => {
       style={{ backgroundColor: color }}
     >
       <div className="flex flex-col items-center  p-4">
-        <h3 className="text-sm  ">{event.title}</h3>
-        <p className="text-sm ">{event.date}</p>
+        <h3 className="text-lg  ">{event.title}</h3>
+        <p className="text-lg ">{event.date}</p>
       </div>
     </div>
   );

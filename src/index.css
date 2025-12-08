@@ -1,7 +1,21 @@
-@import url("https://fonts.googleapis.com/css2?family=Allura&display=swap" );
-@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap'); 
-@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+/* @import url("https://fonts.googleapis.com/css2?family=Allura&display=swap" ); */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope+Display:wght@400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500;600;700&display=swap');
+
+
+/* @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap'); */
 
 @import "tailwindcss";
 
@@ -52,12 +66,9 @@ html, body, #root {
 }
 
 body {
-    font-family: "Archivo Black", cursive; 
+  
+    font-family: "EB Garamond", serif; 
 
-  /* font-family: "Pacifico", cursive; */
-  /* font-family: "Allura", cursive; */
-  /* font-family: "Dancing Script", cursive;
-  font-family: "Satisfy", cursive; */
 
 }
 /* 

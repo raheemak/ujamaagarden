@@ -10,7 +10,7 @@ export const Timeline = ({
   }[];
 }) => (
   <div className="relative w-full max-w-4xl mx-auto py-16">
-    <div className="absolute left-1/2 top-0 h-full w-1 -translate-x-1/2 bg-gray-300"></div>
+    <div className="absolute left-1/2 top-0 h-full w-1 -translate-x-1/2  bg-[#4b2b1b]"></div>
 
     <div className="space-y-16">
       {items.map((item, index) => {
@@ -32,10 +32,10 @@ export const Timeline = ({
             {!isLeft && (
               <div
                 className={`
-                  ${isLeft ? "text-right pl-20" : "text-left pr-20"}
+                  ${isLeft ? "text-right pl-0" : "text-left pr-50"}
                 `}
               >
-                <p className="text-sm text-gray-500">{date}</p>
+                <p className="text-lg ">{date}</p>
               </div>
             )}
 
@@ -44,20 +44,17 @@ export const Timeline = ({
             {isLeft && (
               <div
                 className={`
-                  ${isLeft ? "text-right pl-20" : "text-left pr-20"}
+                  ${isLeft ? "text-right pl-40" : "text-left pr-120"}
                 `}
               >
-                <p className="text-sm text-gray-500">{date}</p>
+                <p className="text-lg">{date}</p>
               </div>
             )}
 
             {/* Dot */}
             <div
-              className="
-                  absolute left-1/2 top-[50%]
-                  w-4 h-4 -translate-x-1/2 -translate-y-1/2
-                 rounded-full bg-[url('/timeline_flower.png')] bg-cover bg-center w-10 h-10
-                "
+              className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2
+                w-3 h-3 rounded-full bg-[#4b2b1a] shadow-sm"
             />
           </div>
         );
