@@ -10,6 +10,7 @@ type TimelineCardProps = {
 
 export const TimelineCard = ({ title, content, date }: TimelineCardProps) => {
   const [open, setOpen] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
 
   // If content HTML starts with an <img ...> tag, extract its src to display here.
   const extractFirstImageSrc = (html: string) => {
@@ -28,13 +29,20 @@ export const TimelineCard = ({ title, content, date }: TimelineCardProps) => {
   const dialogContent = removeFirstImageTag(content);
   return (
     <>
-      <button className="mt-4 p-1 rounded " onClick={() => setOpen(true)}>
-        <div className="w-[420px] max-w-[90%] bg-white p-1 rounded-xl shadow-md text-center">
+      <button
+        className={`mt-4 p-1 rounded transition-colors ${isHovered || open ? "bg-[#3a312a]" : ""}`}
+        onMouseEnter={() => {
+          setIsHovered(true);
+        }}
+        onMouseLeave={() => setIsHovered(false)}
+        onClick={() => setOpen(true)}
+      >
+        <div className="w-[375px] bg-white rounded-xl shadow-md text-center overflow-hidden">
           {firstImgSrc ? (
             <img
               src={firstImgSrc}
               alt={title}
-              className="w-full object-cover rounded-md "
+              className="w-full block object-cover rounded-md"
             />
           ) : (
             <>
