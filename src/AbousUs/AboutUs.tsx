@@ -3,9 +3,8 @@ import { AboutUsCard, AboutUsImg } from "./AboutUsCard";
 
 export const AboutUs = () => {
   return (
-    <div className="w-full flex-1 relative flex overflow-visible flex-col items-center justify-center bg-cover bg-center px-0 py-0 md:px-12 md:py-4">
-      <div className="absolute inset-10 top-50 left-0 right-0  bg-[#8b9b3c] opacity-10 blur-2xl z-0 [clip-path:polygon(10%_85%,90%_45%,95%_60%,50%_80%,5%_60%)]"></div>
-      <h1 className="text-3xl">About Us</h1>
+    <div className="w-full flex flex-col items-center py-10">
+      <h2 className="text-4xl font-bold mb-8">About Us</h2>
 
       {Object.values(ABOUT_US_CONSTANTS).map((section, _index) => (
         <AboutUsCard>

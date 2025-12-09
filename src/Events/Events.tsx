@@ -13,7 +13,7 @@ export const Events = () => {
 
   return (
     <div className="w-full flex flex-col items-center py-10">
-      <h2 className="text-2xl font-bold mb-4">Events</h2>
+      <h2 className="text-4xl font-bold mb-8">Events</h2>
 
       <Timeline items={events} />
     </div>
