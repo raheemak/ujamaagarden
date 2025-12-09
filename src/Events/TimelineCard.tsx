@@ -5,9 +5,10 @@ import { EventDialog } from "./EventDialog";
 type TimelineCardProps = {
   content: string;
   title: string;
+  date: string;
 };
 
-export const TimelineCard = ({ title, content }: TimelineCardProps) => {
+export const TimelineCard = ({ title, content, date }: TimelineCardProps) => {
   const [open, setOpen] = useState(false);
 
   // If content HTML starts with an <img ...> tag, extract its src to display here.
@@ -27,19 +28,20 @@ export const TimelineCard = ({ title, content }: TimelineCardProps) => {
   const dialogContent = removeFirstImageTag(content);
   return (
     <>
-      <button
-        className="mt-4 px-4 py-2 e rounded "
-        onClick={() => setOpen(true)}
-      >
-        <div className="w-[420px] max-w-[90%] bg-white p-6 rounded-xl shadow-md text-center">
+      <button className="mt-4 p-1 rounded " onClick={() => setOpen(true)}>
+        <div className="w-[420px] max-w-[90%] bg-white p-1 rounded-xl shadow-md text-center">
           {firstImgSrc ? (
             <img
               src={firstImgSrc}
               alt={title}
-              className="w-full object-cover rounded-md my-3"
+              className="w-full object-cover rounded-md "
             />
-          ) : null}
-          <h3 className="text-md font-semibold mt-1">{title}</h3>
+          ) : (
+            <>
+              <h3 className="text-md font-semibold mt-1">{title}</h3>
+              <p className="text-sm text-gray-500 mt-1">{date}</p>
+            </>
+          )}
         </div>
       </button>
       <DialogModal open={open} onOpenChange={setOpen}>

@@ -1,5 +1,6 @@
 import { TimelineCard } from "./TimelineCard";
 
+
 export const Timeline = ({
   items,
 }: {
@@ -35,11 +36,16 @@ export const Timeline = ({
                   ${isLeft ? "text-right pl-0" : "text-left pr-50"}
                 `}
               >
-                <p className="text-lg ">{date}</p>
+                {/* <h3 className="text-md font-semibold mt-1">{item.title}</h3>
+                <p className="text-lg ">{date}</p> */}
               </div>
             )}
 
-            <TimelineCard title={item.title} content={item.content} />
+            <TimelineCard
+              title={item.title}
+              content={item.content}
+              date={date}
+            />
 
             {isLeft && (
               <div
@@ -47,7 +53,9 @@ export const Timeline = ({
                   ${isLeft ? "text-right pl-40" : "text-left pr-120"}
                 `}
               >
-                <p className="text-lg">{date}</p>
+                {/* <h3 className="text-md font-semibold mt-1">{item.title}</h3>
+
+                <p className="text-lg">{date}</p> */}
               </div>
             )}
 
