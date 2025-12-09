@@ -36,8 +36,8 @@ export const Timeline = ({
                   ${isLeft ? "text-right pl-0" : "text-left pr-50"}
                 `}
               >
-                {/* <h3 className="text-md font-semibold mt-1">{item.title}</h3>
-                <p className="text-lg ">{date}</p> */}
+                <h3 className="text-md font-semibold mt-1">{item.title}</h3>
+                <p className="text-lg ">{date}</p>
               </div>
             )}
 
@@ -53,9 +53,9 @@ export const Timeline = ({
                   ${isLeft ? "text-right pl-40" : "text-left pr-120"}
                 `}
               >
-                {/* <h3 className="text-md font-semibold mt-1">{item.title}</h3>
+                <h3 className="text-md font-semibold mt-1">{item.title}</h3>
 
-                <p className="text-lg">{date}</p> */}
+                <p className="text-lg">{date}</p>
               </div>
             )}
 
