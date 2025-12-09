@@ -37,9 +37,7 @@ export const Restoration = () => {
       </div>
       <div className="relative w-screen overflow-hidden">
         <ImageCarousel
-          images={RESTORATION_IMAGES.map(
-            (src) => `/environmental-conservation/${src}`,
-          )}
+          images={RESTORATION_IMAGES.map((src) => `/restoration/${src}`)}
         />
       </div>
     </div>
