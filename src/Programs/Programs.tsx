@@ -27,15 +27,16 @@ export const Programs = () => {
     <div className="w-full flex flex-col items-center py-10">
       <h2 className="text-4xl font-bold mb-8">Our Programs</h2>
       <div className="w-full flex justify-center">
-        <div className="w-full md:w-3/4  md:px-0 grid grid-cols-1 md:grid-cols-3 gap-px justify-center items-start ">
+        <div className="w-full md:w-3/4 md:px-0 grid grid-cols-1 md:grid-cols-3 gap-4 justify-center items-start">
           {PROGRAMS.map((program, index) => (
-            <ProgramCard
-              key={index}
-              title={program.title}
-              img={program.img}
-              url={program.url}
-              text={program.text}
-            />
+            <div key={index} className="hover:scale-105 transition-transform">
+              <ProgramCard
+                title={program.title}
+                img={program.img}
+                url={program.url}
+                text={program.text}
+              />
+            </div>
           ))}
         </div>
       </div>
