@@ -1,3 +1,14 @@
+import ImageCarousel from "../../shared/Carousel";
+
+const RESTORATION_IMAGES = [
+  "envrest.jpg",
+  "envrest2.jpg",
+  "envres3.jpg",
+  "envrest4.jpg",
+  "envres5.jpg",
+  "envres6.jpg",
+];
+
 export const Restoration = () => {
   return (
     <div className="w-full max-w-4xl mx-auto p-6">
@@ -22,6 +33,9 @@ export const Restoration = () => {
         Coalition, Cornell Cooperative Extension, Bronx Green-Up, and Xerces
         Society.
       </p>
+      <ImageCarousel
+        images={RESTORATION_IMAGES.map((src) => `/restoration/${src}`)}
+      />
     </div>
   );
 };

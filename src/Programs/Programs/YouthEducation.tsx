@@ -1,3 +1,20 @@
+import ImageCarousel from "../../shared/Carousel";
+
+const YOUTH_EDUCATION_IMAGES = [
+  "youtheducation.jpg",
+  "youthprog1.2.jpg",
+  "youthprog2.jpg",
+  "youthprog3.jpg",
+  "youthprog4.jpg",
+  "youthprog5.jpg",
+  "youthprog6.png",
+  "youthprog7.jpg",
+  "youthprog8.jpg",
+  "youthprog9.jpg",
+  "youthprog10.png",
+  "youthprog11.jpg",
+];
+
 export const YouthEducation = () => {
   return (
     <div className="w-full max-w-4xl mx-auto p-6">
@@ -32,6 +49,9 @@ export const YouthEducation = () => {
           resistance, edited by Alicia Grullon.
         </span>
       </div>
+      <ImageCarousel
+        images={YOUTH_EDUCATION_IMAGES.map((src) => `/youth-education/${src}`)}
+      />
     </div>
   );
 };

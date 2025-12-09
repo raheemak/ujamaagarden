@@ -1,6 +1,14 @@
 import ImageCarousel from "../../shared/Carousel";
 
-const MOM_PROGRAM_IMAGES = ["momprog3.jpg", "momprog4.jpg", "momprog5.png"];
+const MOM_PROGRAM_IMAGES = [
+  "momprog1.jpg",
+  "momprog2.jpg",
+  "momprog3.jpg",
+  "momprog4.jpg",
+  "momprog5.png",
+  "momprog6.jpg",
+  "momprog7.jpg",
+];
 
 export const MomProgram = () => {
   return (
