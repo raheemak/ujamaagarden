@@ -1,6 +1,3 @@
-import { ABOUT_US_CONSTANTS } from "./AboutUs.constants";
-import { AboutUsCard, AboutUsImg } from "./AboutUsCard";
-
 export const AboutUs = () => {
   return (
     <div className="w-full flex flex-col items-center py-4">
