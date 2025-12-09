@@ -1,3 +1,7 @@
+import ImageCarousel from "../../shared/Carousel";
+
+const MOM_PROGRAM_IMAGES = ["momprog3.jpg", "momprog4.jpg", "momprog5.png"];
+
 export const MomProgram = () => {
   return (
     <div className="w-full max-w-4xl mx-auto p-6">
@@ -35,6 +39,10 @@ export const MomProgram = () => {
         expand the families’ imaginations of what is possible, namely, access to
         land, as people from the Bronx strive for holistic, healthy lifestyles.
       </p>
+
+      <ImageCarousel
+        images={MOM_PROGRAM_IMAGES.map((src) => `/mom-program/${src}`)}
+      />
     </div>
   );
 };

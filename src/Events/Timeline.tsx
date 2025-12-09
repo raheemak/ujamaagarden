@@ -13,7 +13,7 @@ export const Timeline = ({
   <div className="relative w-full max-w-4xl mx-auto py-16">
     <div className="absolute left-1/2 top-0 h-full w-1 -translate-x-1/2  bg-[#4b2b1b]"></div>
 
-    <div className="space-y-16">
+    <div className="">
       {items.map((item, index) => {
         const isLeft = index % 2 === 0;
         const date = new Date(item.published).toLocaleDateString(undefined, {
@@ -54,7 +54,6 @@ export const Timeline = ({
                 `}
               >
                 <h3 className="text-md font-semibold mt-1">{item.title}</h3>
-
                 <p className="text-lg">{date}</p>
               </div>
             )}
