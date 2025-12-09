@@ -1,6 +1,16 @@
 export const ContactUs = () => {
   return (
-    <div className="w-full flex flex-col items-center py-10">
+    <div className="w-full flex flex-col items-center py-4">
+      <div className="flex justify-center">
+        <iframe
+          src="https://forms.gle/eB5ddjMwRA4CKfFEA"
+          width="640"
+          height="900"
+          className="shadow-lg rounded-lg"
+          title="Contact Form"
+        ></iframe>
+      </div>
+      {/* 
       <h2 className="text-4xl font-bold mb-8">Contact Us</h2>
       <p className="mb-4">
         We would love to hear from you! Please reach out with any questions or
@@ -57,7 +67,7 @@ export const ContactUs = () => {
             Send Message
           </button>
         </div>
-      </form>
+      </form> */}
     </div>
   );
 };
