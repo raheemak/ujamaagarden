@@ -1,12 +1,12 @@
 export const TitleText = () => {
   return (
-    <div className="w-full pt-70 sm:pt-[130px] flex-1 relative flex flex-col items-center">
+    <div className="w-full pt-80 sm:pt-[130px] flex-1 relative flex flex-col items-center">
       <h1
         className="
           block
           text-center
           mx-auto
-          text-[50px]
+          text-[55px]
           sm:text-[120px]
           md:text-[180px]
           lg:text-[100px]
