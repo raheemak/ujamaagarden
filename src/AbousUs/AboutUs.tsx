@@ -1,97 +1,23 @@
 export const AboutUs = () => {
   return (
-    <div className="w-full flex flex-col items-center py-4">
-      <h2 className="text-4xl font-bold mb-8">About Us</h2>
+    <div className="w-full flex flex-col items-center py-6 px-4 sm:px-6">
+      <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 text-center lg:hidden">
+        About Us
+      </h2>
 
-      {/* 
-      {Object.values(ABOUT_US_CONSTANTS).map((section, _index) => (
-        <AboutUsCard>
-          <div
-            className={`flex flex-col gap-x-8 md:flex-row ${_index % 2 !== 0 ? "md:flex-row-reverse" : ""} items-center`}
-          >
-            <AboutUsImg img={section.img} />
-
-            <div className="flex-1 pr-3 w-full md:w-auto text-xl ">
-              <h2 className="font-bold">{section.title}</h2>
-              <br />
-
-              {section === ABOUT_US_CONSTANTS.MISSION && (
-                <span>
-                  <p>
-                    At Ujamaa Garden, we consider access to organic, local, and
-                    fresh produce as the necessary first step towards liberatory
-                    world-making. In addition to the food and medicine we grow
-                    at the garden, our partnerships and programs pair our urban
-                    community’s needs with rural resources by bringing food from
-                    upstate NY to our community members living under food
-                    apartheid. By increasing capacity through food security, we
-                    facilitate space for visioning and developing tools to
-                    create the world we want to inhabit.
-                  </p>
-                  <p>
-                    Ujamaa Garden is free and open to the public to serve as a
-                    gathering place to play, create, rest, and seed nourishing
-                    futures.
-                  </p>
-                </span>
-              )}
-
-              {section === ABOUT_US_CONSTANTS.VISION && (
-                <p>
-                  Young people learn, practice, and develop skills to co-create
-                  a more caring and just society, rooted in reciprocity with the
-                  earth and knowledge of ancestral wisdoms. Their work
-                  reverberates throughout their communities and inspires
-                  gatherings with serious intentions to make the world a better
-                  place for all people.
-                </p>
-              )}
-
-              {section === ABOUT_US_CONSTANTS.CORE_VALUES && (
-                <ul>
-                  <li className="list-disc pl-5">
-                    Food sovereignty is the foundation of liberatory
-                    world-making.
-                  </li>
-                  <li className="list-disc pl-5">
-                    It is important to center our youth’s dreams, knowledge, and
-                    ideas.
-                  </li>
-                  <li className="list-disc pl-5">
-                    Awareness and care for the earth and earth systems are
-                    essential components of all leadership and guiding
-                    frameworks.
-                  </li>
-                  <li className="list-disc pl-5">
-                    We prioritize building with our local community.
-                  </li>
-                  <li className="list-disc pl-5">
-                    Acknowledging the importance and wisdom of generations,
-                    species, and beings different from us is essential to create
-                    strong coalitions. We build intergenerationally, across
-                    cultures and languages, and beyond the human human form!
-                  </li>
-                </ul>
-              )}
-            </div>
-          </div>
-        </AboutUsCard>
-      ))} */}
-
-      <div className="min-h-2/3  h-2/3 bg-amber-950 rounded-lg shadow-lg w-full max-w-6xl overflow-hidden">
-        <div className="grid grid-cols-1 lg:grid-cols-2 min-h-screen">
-          {/* Left Column - Mission & Vision */}
+      <div className="bg-amber-950 rounded-lg shadow-lg w-full max-w-6xl lg:h-[90vh] lg:overflow-hidden">
+        <div className="grid grid-cols-1 lg:grid-cols-2 ">
+          {/* Left Column - Vision & Mission */}
           <div className="flex flex-col">
-            {/* Mission Section */}
-            <div className="relative h-[30vh] lg:h-1/3 bg-gradient-to-br from-amber-900 via-amber-800 to-amber-900 overflow-hidden">
-              {/* Background Image */}
+            {/* VISION */}
+            <section className="relative flex-none lg:flex-2 overflow-hidden">
               <img
                 src="/about_us_2.png"
-                alt="Mission"
+                alt="Vision"
                 className="absolute inset-0 w-full h-full object-cover opacity-20"
               />
 
-              {/* Decorative rectangles - more pixelated look */}
+              {/* Decorative rectangles */}
               <div className="absolute top-0 left-0 w-16 h-full bg-amber-950 opacity-50" />
               <div className="absolute top-0 left-16 w-12 h-full bg-amber-900 opacity-40" />
               <div className="absolute top-0 left-28 w-20 h-2/3 bg-amber-800 opacity-35" />
@@ -110,12 +36,11 @@ export const AboutUs = () => {
               <div className="absolute top-1/3 right-1/4 w-16 h-24 bg-yellow-700 opacity-15" />
               <div className="absolute bottom-1/4 right-1/3 w-28 h-16 bg-amber-500 opacity-25" />
 
-              {/* Content */}
-              <div className="relative z-10 p-6 lg:p-8 h-full flex flex-col justify-start">
-                <h1 className="text-white text-6xl lg:text-5xl mb-6 tracking-tight">
+           <div className="relative z-10 px-5 sm:px-8 lg:px-10 pt-3 sm:pt-4 lg:pt-4 pb-5">
+                <h1 className="text-white text-4xl sm:text-5xl lg:text-5xl mb-2">
                   VISION
                 </h1>
-                <p className="text-stone-100 text-lg lg:text-base max-w-md leading-relaxed">
+                <p className="text-stone-100 text-base sm:text-lg leading-relaxed max-w-prose">
                   Young people learn, practice, and develop skills to co-create
                   a more caring and just society, rooted in reciprocity with the
                   earth and knowledge of ancestral wisdoms. Their work
@@ -124,19 +49,17 @@ export const AboutUs = () => {
                   place for all people.
                 </p>
               </div>
-            </div>
+            </section>
 
-            {/* Vision Section */}
-            <div className="relative h-[40vh] lg:h-2/3 bg-gradient-to-br from-green-800 via-emerald-700 to-green-700 overflow-hidden">
-              {/* Background Image */}
+            {/* MISSION */}
+            <section className="relative min-h-[520px] sm:min-h-[560px] lg:min-h-[640px] bg-gradient-to-br from-green-800 via-emerald-700 to-green-700 overflow-hidden">
               <img
                 src="/about_us_1.png"
-
-alt="Vision"
+                alt="Mission"
                 className="absolute inset-0 w-full h-full object-cover opacity-20"
               />
 
-              {/* Decorative rectangles - more pixelated look */}
+              {/* Decorative rectangles */}
               <div className="absolute top-0 left-0 w-20 h-3/4 bg-emerald-900 opacity-40" />
               <div className="absolute top-0 left-20 w-16 h-2/3 bg-green-800 opacity-35" />
               <div className="absolute top-0 left-36 w-24 h-1/2 bg-emerald-700 opacity-30" />
@@ -155,9 +78,8 @@ alt="Vision"
               <div className="absolute top-2/3 right-1/3 w-20 h-24 bg-green-500 opacity-15" />
               <div className="absolute bottom-1/3 left-1/2 w-16 h-16 bg-emerald-700 opacity-25" />
 
-              {/* Curved shape bottom right */}
               <svg
-                className="absolute bottom-0 right-0 w-64 h-64 opacity-60"
+                className="absolute bottom-0 right-0 w-56 h-56 sm:w-64 sm:h-64 opacity-60"
                 viewBox="0 0 200 200"
                 fill="none"
               >
@@ -168,12 +90,12 @@ alt="Vision"
                 />
               </svg>
 
-              {/* Content */}
-              <div className="relative z-10 p-6 lg:p-8 h-full flex flex-col justify-start">
-                <h1 className="text-white text-6xl lg:text-4xl mb-6 tracking-tight">
+              <div className="relative z-10 px-5 sm:px-8 lg:px-10 pt-4 sm:pt-4 lg:pt-4 pb-5">
+                <h1 className="text-white text-4xl sm:text-5xl lg:text-5xl mb-2">
                   MISSION
                 </h1>
-                <p className="text-stone-100 text-lg lg:text-base max-w-md leading-relaxed">
+
+                <div className="text-stone-100 text-base sm:text-lg leading-relaxed max-w-prose space-y-4">
                   <p>
                     At Ujamaa Garden, we consider access to organic, local, and
                     fresh produce as the necessary first step towards liberatory
@@ -190,30 +112,28 @@ alt="Vision"
                     gathering place to play, create, rest, and seed nourishing
                     futures.
                   </p>
-                </p>
+                </div>
               </div>
-            </div>
+            </section>
           </div>
 
           {/* Right Column - Core Values */}
-          <div className="relative bg-amber-100 overflow-hidden min-h-[100vh] lg:min-h-0">
-            {/* Background Image */}
+          <section className="relative bg-amber-100 overflow-hidden">
             <img
-src="/about_us_3.png"
-alt="Core Values"
+              src="/about_us_3.png"
+              alt="Core Values"
               className="absolute inset-0 w-full h-full object-cover opacity-15"
             />
 
-            {/* Decorative curved shape top */}
             <svg
-              className="absolute top-0 right-0 w-80 h-48 opacity-80"
+              className="absolute top-0 right-0 w-72 h-40 sm:w-80 sm:h-48 opacity-80"
               viewBox="0 0 400 200"
               fill="none"
             >
               <path d="M0 0C100 50 200 80 400 60L400 0L0 0Z" fill="#92400E" />
             </svg>
 
-            {/* Decorative rectangles - more pixelated look */}
+            {/* Keep your decorative rectangles (unchanged) */}
             <div className="absolute top-0 left-0 w-24 h-40 bg-amber-200 opacity-50" />
             <div className="absolute top-0 left-24 w-20 h-56 bg-amber-300 opacity-40" />
             <div className="absolute top-40 left-0 w-32 h-48 bg-amber-100 opacity-60" />
@@ -238,9 +158,8 @@ alt="Core Values"
             <div className="absolute bottom-1/3 left-1/2 w-16 h-20 bg-amber-300 opacity-30" />
             <div className="absolute top-2/3 left-1/4 w-22 h-16 bg-yellow-200 opacity-25" />
 
-            {/* Curved shape bottom */}
             <svg
-              className="absolute bottom-0 left-0 w-96 h-64 opacity-50"
+              className="absolute bottom-0 left-0 w-80 h-56 sm:w-96 sm:h-64 opacity-50"
               viewBox="0 0 400 300"
               fill="none"
             >
@@ -256,40 +175,35 @@ alt="Core Values"
               />
             </svg>
 
-            {/* Content */}
-            <div className="relative z-10 p-12 lg:p-16 h-full flex flex-col justify-start">
-              <h1 className="text-amber-950 text-6xl lg:text-4xl mb-2 tracking-tight">
+            <div className="relative z-10 p-6 sm:p-10 lg:p-14">
+              <h1 className="text-amber-950 text-4xl sm:text-5xl lg:text-4xl mb-4 tracking-tight">
                 CORE VALUES
               </h1>
 
-              <p className="text-amber-900 text-lg lg:text-base max-w-md leading-relaxed">
-                <ul>
-                  <li className="list-disc pl-5">
-                    Food sovereignty is the foundation of liberatory
-                    world-making.
-                  </li>
-                  <li className="list-disc pl-5">
-                    It is important to center our youth’s dreams, knowledge, and
-                    ideas.
-                  </li>
-                  <li className="list-disc pl-5">
-                    Awareness and care for the earth and earth systems are
-                    essential components of all leadership and guiding
-                    frameworks.
-                  </li>
-                  <li className="list-disc pl-5">
-                    We prioritize building with our local community.
-                  </li>
-                  <li className="list-disc pl-5">
-                    Acknowledging the importance and wisdom of generations,
-                    species, and beings different from us is essential to create
-                    strong coalitions. We build intergenerationally, across
-                    cultures and languages, and beyond the human human form!
-                  </li>
-                </ul>
-              </p>
+              <ul className="text-amber-900 text-base sm:text-lg lg:text-xl leading-relaxed space-y-3 max-w-prose pl-5">
+                <li className="list-disc">
+                  Food sovereignty is the foundation of liberatory world-making.
+                </li>
+                <li className="list-disc">
+                  It is important to center our youth’s dreams, knowledge, and
+                  ideas.
+                </li>
+                <li className="list-disc">
+                  Awareness and care for the earth and earth systems are
+                  essential components of all leadership and guiding frameworks.
+                </li>
+                <li className="list-disc">
+                  We prioritize building with our local community.
+                </li>
+                <li className="list-disc">
+                  Acknowledging the importance and wisdom of generations,
+                  species, and beings different from us is essential to create
+                  strong coalitions. We build intergenerationally, across
+                  cultures and languages, and beyond the human human form!
+                </li>
+              </ul>
             </div>
-          </div>
+          </section>
         </div>
       </div>
     </div>
