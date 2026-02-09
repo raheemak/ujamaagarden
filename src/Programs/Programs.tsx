@@ -1,14 +1,13 @@
 import { ProgramCard } from "./ProgramCard";
 
 const PROGRAMS = [
-
   {
     title: "Mom Program",
     img: "mom_program.jpg",
     url: "/mom-program",
     text: "Launched in Spring 2024, our Mom Program supports a cohort of 11 mothers and their families with free bi-weekly...",
   },
-    {
+  {
     title: "Environmental Conservation and Restoration",
     img: "restoration.jpg",
     url: "/environmental-conservation",

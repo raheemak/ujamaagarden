@@ -36,7 +36,7 @@ export const AboutUs = () => {
               <div className="absolute top-1/3 right-1/4 w-16 h-24 bg-yellow-700 opacity-15" />
               <div className="absolute bottom-1/4 right-1/3 w-28 h-16 bg-amber-500 opacity-25" />
 
-           <div className="relative z-10 px-5 sm:px-8 lg:px-10 pt-3 sm:pt-4 lg:pt-4 pb-5">
+              <div className="relative z-10 px-5 sm:px-8 lg:px-10 pt-3 sm:pt-4 lg:pt-4 pb-5">
                 <h1 className="text-white text-4xl sm:text-5xl lg:text-5xl mb-2">
                   VISION
                 </h1>

@@ -1,6 +1,5 @@
 import { TimelineCard } from "./TimelineCard";
 
-
 export const Timeline = ({
   items,
 }: {
