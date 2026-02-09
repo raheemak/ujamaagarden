@@ -12,9 +12,8 @@ export const Events = () => {
   if (isError || !events) return <p>Failed to load events.</p>;
 
   return (
-    <div className="w-full flex flex-col items-center py-10">
-      <h2 className="text-4xl font-bold mb-8">Events</h2>
-
+    <div className="w-full flex flex-col items-center py-10 px-4 overflow-x-hidden">
+      <h2 className="text-4xl font-bold mb-8 text-center">Events</h2>
       <Timeline items={events} />
     </div>
   );

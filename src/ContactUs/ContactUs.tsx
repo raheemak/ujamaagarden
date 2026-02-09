@@ -34,9 +34,22 @@ export const ContactUs = () => {
 
   return (
     <div className="w-full flex items-center py-4">
-      <div className="mx-auto w-1/2 rounded-xl border border-gray-200 p-6 shadow-sm">
+<div
+  className="
+    mx-auto
+    w-full
+    px-4
+    sm:w-11/12
+    md:w-3/4
+    lg:w-1/2
+    rounded-xl
+    border border-gray-200
+    p-6
+    shadow-sm
+  "
+      >
+        {" "}
         <h2 className="mb-6 text-xl font-semibold text-gray-900">Contact Us</h2>
-
         <form ref={formRef} onSubmit={onSubmit} className="space-y-5">
           <input
             name="website"
