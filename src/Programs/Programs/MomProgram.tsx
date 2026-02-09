@@ -42,13 +42,12 @@ export const MomProgram = () => {
           learning experiences unique to them (see Youth Education). We hope to
           foster an awe and curiosity for nature and farming that can be
           cultivated into an investment in the health of their communities.
-          Program partners include Iridescent Earth Collective, Serra Vida Farm,
-          Trinity Farm, Rise and Root Farm, Bronx Green-Up, and Community Access
-          Kitchen. We dream of sustainable funding to expand our program
-          calendar and visit even more growing spaces and natural areas to
-          expand the families’ imaginations of what is possible, namely, access
-          to land, as people from the Bronx strive for holistic, healthy
-          lifestyles.
+          Program partners include Iridescent Earth Collective, Trinity Farm,
+          Rise and Root Farm, Bronx Green-Up, and Community Access Kitchen. We
+          dream of sustainable funding to expand our program calendar and visit
+          even more growing spaces and natural areas to expand the families’
+          imaginations of what is possible, namely, access to land, as people
+          from the Bronx strive for holistic, healthy lifestyles.
         </p>
       </div>
       <div className="relative w-screen overflow-hidden">
