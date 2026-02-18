@@ -37,7 +37,7 @@ export const TimelineCard = ({ title, content, date }: TimelineCardProps) => {
         onMouseLeave={() => setIsHovered(false)}
         onClick={() => setOpen(true)}
       >
-        <div className="w-[375px] bg-white rounded-xl shadow-md text-center overflow-hidden">
+        <div className="w-full max-w-[375px] mx-auto bg-white rounded-xl shadow-md text-center overflow-hidden">
           {firstImgSrc ? (
             <img
               src={firstImgSrc}

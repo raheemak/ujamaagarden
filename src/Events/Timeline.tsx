@@ -39,16 +39,37 @@ export const Timeline = ({
               "
             />
 
-            {/* MOBILE */}
-            <div className="md:hidden pl-8">
+            {/* ================= MOBILE ================= */}
+            <div className="md:hidden pl-8 min-w-0">
               <div className="mb-3">
                 <h3 className="text-md font-semibold mt-1">{item.title}</h3>
-                <p className="text-sm">{date}</p>
+                <p className="text-sm text-gray-600">{date}</p>
               </div>
-              <TimelineCard title={item.title} content={item.content} date={date} />
+
+              <TimelineCard
+                title={item.title}
+                content={item.content}
+                date={date}
+              />
+
+              {/* Tap affordance */}
+              <div className="mt-2 flex items-center gap-2 text-xs text-gray-600">
+                <span className="inline-flex items-center justify-center w-5 h-5 rounded-full bg-black/5">
+                  <svg className="w-3.5 h-3.5" viewBox="0 0 24 24" fill="none">
+                    <path
+                      d="M9 5h10v10M19 5l-8 8"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </span>
+                <span>Tap image to view details</span>
+              </div>
             </div>
 
-            {/* DESKTOP: two real columns, no placeholders */}
+            {/* ================= DESKTOP ================= */}
             <div className="hidden md:grid grid-cols-2 items-center gap-x-12">
               {/* LEFT COLUMN */}
               <div className="flex justify-end">
@@ -61,7 +82,6 @@ export const Timeline = ({
                     />
                   </div>
                 ) : (
-                  // right-side item => put text on left
                   <div className="w-full max-w-md text-right pr-2">
                     <h3 className="text-md font-semibold mt-1">{item.title}</h3>
                     <p className="text-sm">{date}</p>
@@ -80,7 +100,6 @@ export const Timeline = ({
                     />
                   </div>
                 ) : (
-                  // left-side item => put text on right
                   <div className="w-full max-w-md text-left pl-2">
                     <h3 className="text-md font-semibold mt-1">{item.title}</h3>
                     <p className="text-sm">{date}</p>
