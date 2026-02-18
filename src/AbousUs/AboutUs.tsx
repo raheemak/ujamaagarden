@@ -199,7 +199,7 @@ export const AboutUs = () => {
                   Acknowledging the importance and wisdom of generations,
                   species, and beings different from us is essential to create
                   strong coalitions. We build intergenerationally, across
-                  cultures and languages, and beyond the human human form!
+                  cultures and languages, and beyond the human form!
                 </li>
               </ul>
             </div>
