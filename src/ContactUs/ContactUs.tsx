@@ -34,8 +34,8 @@ export const ContactUs = () => {
 
   return (
     <div className="w-full flex items-center py-4">
-<div
-  className="
+      <div
+        className="
     mx-auto
     w-full
     px-4

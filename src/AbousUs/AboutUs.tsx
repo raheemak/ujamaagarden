@@ -185,8 +185,7 @@ export const AboutUs = () => {
                   Food sovereignty is the foundation of liberatory world-making.
                 </li>
                 <li className="list-disc">
-                  It is important to center our youth’s dreams, knowledge, and
-                  ideas.
+                  We center our youth’s dreams, knowledge, and ideas
                 </li>
                 <li className="list-disc">
                   Awareness and care for the earth and earth systems are
