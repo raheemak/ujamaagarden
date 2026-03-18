@@ -10,7 +10,6 @@ import { MomProgram } from "./Programs/Programs/MomProgram";
 import { Restoration } from "./Programs/Programs/Restoration";
 import { YouthEducation } from "./Programs/Programs/YouthEducation";
 import { ContactUs } from "./ContactUs/ContactUs";
-import { OurTeam } from "./OurTeam/OurTeam";
 import { Donate } from "./Donate/Donate";
 
 function App() {
@@ -21,7 +20,6 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<AboutUs />} />
-          <Route path="/our-team" element={<OurTeam />} />
           <Route path="/donate" element={<Donate />} />
           <Route path="/images" element={<ImageGallery />} />
           <Route path="/events" element={<Events />} />

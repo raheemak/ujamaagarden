@@ -7,7 +7,6 @@ export const NavBar = () => {
 
   const MenuItems = [
     { name: "About Us", path: "about" },
-    { name: "Our Team", path: "our-team" },
     { name: "Events", path: "events" },
     { name: "Programs", path: "programs" },
     { name: "Images", path: "images" },
