@@ -10,7 +10,7 @@ export const EventDialog = ({ content, open, setOpen }: EventDialogProps) => {
   return (
     <DialogModal open={open} onOpenChange={setOpen}>
       <p
-        className="mt-2 text-gray-700  text-lg font-normal"
+        className="mt-2 text-gray-700  text-lg font-normal [&_a]:text-amber-600"
         dangerouslySetInnerHTML={{
           __html: stripInlineStyles(content),
         }}
