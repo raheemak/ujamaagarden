@@ -16,7 +16,7 @@ interface BloggerApiResponse {
 
 const fetchPostsByTag = async (tag: string): Promise<BloggerEntry[]> => {
   const res = await fetch(
-    `https://www.googleapis.com/blogger/v3/blogs/378810748578023305/posts?labels=${tag}&key=${BLOGGER_API_KEY}`,
+    `https://www.googleapis.com/blogger/v3/blogs/378810748578023305/posts?labels=${tag}&maxResults=50&key=${BLOGGER_API_KEY}`,
   );
 
   if (!res.ok) throw new Error("Failed to fetch posts");
